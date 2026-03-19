@@ -1,0 +1,2 @@
+[console_scripts]
+transformed-transformer = transformed_transformer.cli:main

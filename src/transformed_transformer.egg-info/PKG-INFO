@@ -1,0 +1,206 @@
+Metadata-Version: 2.4
+Name: transformed-transformer
+Version: 0.3.0
+Summary: A clean PyTorch API for standard and transformed transformer attention variants.
+Author: Angshul Majumdar
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.1
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+
+# Transformed Transformer API
+
+From-scratch PyTorch API for standard and transformed transformer variants, packaged with miniBERT and miniSLM demos.
+
+## What this repo demonstrates
+
+This repository is a hiring-showcase engineering artifact. It is meant to show that the author can read a nonstandard transformer design, implement new variants from scratch, package them cleanly, test them, and extend the same package skeleton into miniBERT and miniSLM demos.
+
+The emphasis is engineering quality, modularity, API cleanliness, and demo readiness. It is not framed as a publication-benchmark repository.
+
+## Included attention backends
+
+- `standard` — single-head dense self-attention
+- `transformed_dense` — dense transformed attention with learned transform matrices
+- `transformed_sparse` — surrogate transformed sparse attention using top-k value sparsification
+- `transformed_conv` — DCTL-inspired local convolutional transform attention trained end-to-end with Adam
+
+## Important honesty note
+
+The current `transformed_sparse` backend is a surrogate implementation intended for API design, smoke tests, and demo packaging. It should not be overclaimed as a finalized sparse-transformer algorithm.
+
+The current `transformed_conv` backend is inspired by deep convolutional transform learning, but it is implemented here as a backprop-trained transformer module rather than a paper-faithful alternating optimization routine.
+
+## Model families included
+
+- tiny encoder classifier
+- miniBERT sequence classifier
+- miniBERT masked language model
+- miniSLM decoder-only causal LM
+
+## Architecture at a glance
+
+```mermaid
+flowchart LR
+    A[ModelConfig] --> B[build_attention]
+    A --> C[build_tiny_classifier]
+    A --> D[build_mini_bert_classifier]
+    A --> E[build_mini_bert_mlm]
+    A --> F[build_mini_slm]
+    B --> G[standard]
+    B --> H[transformed_dense]
+    B --> I[transformed_sparse surrogate]
+    B --> N[transformed_conv DCTL-inspired]
+    G --> J[shared encoder or decoder blocks]
+    H --> J
+    I --> J
+    N --> J
+    J --> K[Tiny encoder demo]
+    J --> L[miniBERT demo]
+    J --> M[miniSLM demo]
+```
+
+A static SVG is included in `docs/architecture.svg`.
+
+## Install
+
+```bash
+pip install -e .
+pip install -e .[dev]
+```
+
+## Quickstart
+
+```python
+from transformed_transformer import ModelConfig, build_mini_slm
+
+config = ModelConfig(
+    vocab_size=128,
+    seq_len=16,
+    d_model=48,
+    ff_dim=96,
+    num_layers=2,
+    attention_type="transformed_conv",
+)
+
+model = build_mini_slm(config)
+```
+
+## CLI smoke runs
+
+```bash
+python -m transformed_transformer smoke --model tiny --attention standard
+python -m transformed_transformer smoke --model bert_cls --attention transformed_conv
+python -m transformed_transformer smoke --model slm --attention transformed_sparse
+```
+
+## Full local verification
+
+```bash
+bash scripts/run_all_smoke.sh
+pytest -q
+python scripts/quick_benchmark.py
+python scripts/compare_standard_vs_conv.py
+```
+
+## Public API
+
+```python
+from transformed_transformer import (
+    ModelConfig,
+    build_attention,
+    build_tiny_classifier,
+    build_mini_bert_classifier,
+    build_mini_bert_mlm,
+    build_mini_slm,
+)
+```
+
+## Showcase path for interview demos
+
+1. Show the interchangeable attention interface.
+2. Instantiate the tiny encoder model.
+3. Swap backends without changing the outer API.
+4. Show the same abstraction reused in miniBERT.
+5. Show the decoder-only extension into miniSLM.
+6. Run the smoke scripts and quick benchmark harness.
+
+
+## Focused comparison
+
+To run the first clean experiment requested for this repo — **standard vs proposed convolutional-transform transformer** — use:
+
+```bash
+python scripts/compare_standard_vs_conv.py --seeds 10 --epochs 20 --n-samples 64
+```
+
+This writes per-seed and summary files under `results/standard_vs_conv/`.
+
+
+## Focused experiments
+
+Compare only the baseline and the proposed DCTL-inspired convolutional-transform variant:
+
+```bash
+python scripts/compare_standard_vs_conv.py
+```
+
+Low-data sweep:
+
+```bash
+python scripts/compare_standard_vs_conv_low_data.py
+```
+
+Corruption sweep:
+
+```bash
+python scripts/compare_standard_vs_conv_corruption.py
+```
+
+### miniBERT focused comparisons
+
+```bash
+python scripts/compare_minibert_standard_vs_conv.py
+python scripts/compare_minibert_standard_vs_conv_low_data.py
+python scripts/compare_minibert_standard_vs_conv_corruption.py
+```
+
+
+## Analysis-synthesis encoder-decoder variant
+
+This repo now also includes a small encoder-decoder transformer path:
+
+- `build_mini_seq2seq(config)`: standard seq2seq baseline
+- `build_analysis_synthesis_transformer(config)`: proposed analysis-synthesis variant
+
+The proposed encoder-decoder uses:
+
+- convolutional transform-style attention on the encoder/decoder attention path
+- a convolutional dictionary-style synthesis block inside the decoder
+
+This is inspired by convolutional transform learning and convolutional dictionary learning, but it is trained end-to-end with Adam inside a transformer architecture rather than with standalone alternating optimization.
+
+Run the smoke demo with:
+
+```bash
+python examples/seq2seq_smoke_demo.py
+```
+
+
+## Seq2Seq comparison note
+
+For the encoder-decoder comparison, the intended one-to-one benchmark is:
+
+- `standard_seq2seq`
+- `analysis_synthesis_conv`
+
+with a **fixed shared architecture budget**.
+
+Accordingly, the relevant seq2seq result folders in this repo are only:
+
+- `results/seq2seq_standard_vs_analysis_synthesis/`
+- `results/seq2seq_standard_vs_analysis_synthesis_low_data/`
+- `results/seq2seq_standard_vs_analysis_synthesis_corruption/`
+
+These preserve the architecture and vary only the data regime or corruption level.
