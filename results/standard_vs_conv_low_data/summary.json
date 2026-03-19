@@ -1,0 +1,74 @@
+[
+  {
+    "n_samples": 16,
+    "attention_type": "standard",
+    "mean_final_loss": 0.5338431477546692,
+    "std_final_loss": 0.02661761507431551,
+    "mean_best_acc": 0.75,
+    "std_best_acc": 0.07905694150420949,
+    "mean_elapsed_ms": 31.06622519994744
+  },
+  {
+    "n_samples": 16,
+    "attention_type": "transformed_conv",
+    "mean_final_loss": 0.4272933781147003,
+    "std_final_loss": 0.06557689003697115,
+    "mean_best_acc": 0.8375,
+    "std_best_acc": 0.08477912478906585,
+    "mean_elapsed_ms": 71.90477839999403
+  },
+  {
+    "n_samples": 32,
+    "attention_type": "standard",
+    "mean_final_loss": 0.566816794872284,
+    "std_final_loss": 0.03162228720123239,
+    "mean_best_acc": 0.76875,
+    "std_best_acc": 0.08291561975888499,
+    "mean_elapsed_ms": 35.38254600007349
+  },
+  {
+    "n_samples": 32,
+    "attention_type": "transformed_conv",
+    "mean_final_loss": 0.5384591579437256,
+    "std_final_loss": 0.019625207211889713,
+    "mean_best_acc": 0.80625,
+    "std_best_acc": 0.1125,
+    "mean_elapsed_ms": 86.78853339997659
+  },
+  {
+    "n_samples": 64,
+    "attention_type": "standard",
+    "mean_final_loss": 0.6205714702606201,
+    "std_final_loss": 0.019298973572379037,
+    "mean_best_acc": 0.703125,
+    "std_best_acc": 0.02614562582918986,
+    "mean_elapsed_ms": 51.78495160002967
+  },
+  {
+    "n_samples": 64,
+    "attention_type": "transformed_conv",
+    "mean_final_loss": 0.5936463356018067,
+    "std_final_loss": 0.02207698062792341,
+    "mean_best_acc": 0.7375,
+    "std_best_acc": 0.05879652413195868,
+    "mean_elapsed_ms": 128.95244380001714
+  },
+  {
+    "n_samples": 128,
+    "attention_type": "standard",
+    "mean_final_loss": 0.6497750163078309,
+    "std_final_loss": 0.012695570328686038,
+    "mean_best_acc": 0.6515625,
+    "std_best_acc": 0.04151665704870757,
+    "mean_elapsed_ms": 73.24630220000472
+  },
+  {
+    "n_samples": 128,
+    "attention_type": "transformed_conv",
+    "mean_final_loss": 0.630020272731781,
+    "std_final_loss": 0.009797925633576766,
+    "mean_best_acc": 0.6796875,
+    "std_best_acc": 0.03528621809573817,
+    "mean_elapsed_ms": 224.94338040000912
+  }
+]

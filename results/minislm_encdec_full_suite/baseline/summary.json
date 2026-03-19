@@ -1,0 +1,18 @@
+[
+  {
+    "model_type": "standard_seq2seq",
+    "mean_final_loss": 12.76634178161621,
+    "std_final_loss": 0.8970081889481867,
+    "mean_best_token_acc": 0.060612479224801064,
+    "std_best_token_acc": 0.02369520604813333,
+    "mean_elapsed_ms": 185.05347700011043
+  },
+  {
+    "model_type": "analysis_synthesis_conv",
+    "mean_final_loss": 9.570751571655274,
+    "std_final_loss": 0.5702829755959151,
+    "mean_best_token_acc": 0.10312867611646652,
+    "std_best_token_acc": 0.025098357421979432,
+    "mean_elapsed_ms": 443.7953275999462
+  }
+]

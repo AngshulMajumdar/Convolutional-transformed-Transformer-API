@@ -1,0 +1,164 @@
+[
+  {
+    "experiment": "baseline",
+    "attention_type": "standard",
+    "n_samples": 64,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.6253782033920288,
+    "mean_best_acc": 0.684375,
+    "mean_elapsed_ms": 95.81330440014426
+  },
+  {
+    "experiment": "baseline",
+    "attention_type": "transformed_conv",
+    "n_samples": 64,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.5903465986251831,
+    "mean_best_acc": 0.796875,
+    "mean_elapsed_ms": 206.90669779978634
+  },
+  {
+    "experiment": "low_data",
+    "attention_type": "standard",
+    "n_samples": 16,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.5414415299892426,
+    "mean_best_acc": 0.8125,
+    "mean_elapsed_ms": 48.800165199281764
+  },
+  {
+    "experiment": "low_data",
+    "attention_type": "transformed_conv",
+    "n_samples": 16,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.41573777198791506,
+    "mean_best_acc": 0.9375,
+    "mean_elapsed_ms": 110.27043700014474
+  },
+  {
+    "experiment": "low_data",
+    "attention_type": "standard",
+    "n_samples": 32,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.5729695558547974,
+    "mean_best_acc": 0.7625,
+    "mean_elapsed_ms": 60.82741520003765
+  },
+  {
+    "experiment": "low_data",
+    "attention_type": "transformed_conv",
+    "n_samples": 32,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.5067602336406708,
+    "mean_best_acc": 0.86875,
+    "mean_elapsed_ms": 145.11400399969716
+  },
+  {
+    "experiment": "low_data",
+    "attention_type": "standard",
+    "n_samples": 64,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.6253782033920288,
+    "mean_best_acc": 0.684375,
+    "mean_elapsed_ms": 90.04106480024348
+  },
+  {
+    "experiment": "low_data",
+    "attention_type": "transformed_conv",
+    "n_samples": 64,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.5903465986251831,
+    "mean_best_acc": 0.796875,
+    "mean_elapsed_ms": 223.79757259986945
+  },
+  {
+    "experiment": "low_data",
+    "attention_type": "standard",
+    "n_samples": 128,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.6483020782470703,
+    "mean_best_acc": 0.665625,
+    "mean_elapsed_ms": 157.26270440027292
+  },
+  {
+    "experiment": "low_data",
+    "attention_type": "transformed_conv",
+    "n_samples": 128,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.63225759267807,
+    "mean_best_acc": 0.6859375,
+    "mean_elapsed_ms": 408.69491699959326
+  },
+  {
+    "experiment": "corruption",
+    "attention_type": "standard",
+    "n_samples": 64,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.6253782033920288,
+    "mean_best_acc": 0.684375,
+    "mean_elapsed_ms": 108.37846460017317
+  },
+  {
+    "experiment": "corruption",
+    "attention_type": "transformed_conv",
+    "n_samples": 64,
+    "noise_prob": 0.0,
+    "mean_final_loss": 0.5903465986251831,
+    "mean_best_acc": 0.796875,
+    "mean_elapsed_ms": 259.09198819972517
+  },
+  {
+    "experiment": "corruption",
+    "attention_type": "standard",
+    "n_samples": 64,
+    "noise_prob": 0.1,
+    "mean_final_loss": 0.6123642206192017,
+    "mean_best_acc": 0.746875,
+    "mean_elapsed_ms": 89.22257239973987
+  },
+  {
+    "experiment": "corruption",
+    "attention_type": "transformed_conv",
+    "n_samples": 64,
+    "noise_prob": 0.1,
+    "mean_final_loss": 0.5971807241439819,
+    "mean_best_acc": 0.79375,
+    "mean_elapsed_ms": 232.52958999910334
+  },
+  {
+    "experiment": "corruption",
+    "attention_type": "standard",
+    "n_samples": 64,
+    "noise_prob": 0.2,
+    "mean_final_loss": 0.6104105591773987,
+    "mean_best_acc": 0.746875,
+    "mean_elapsed_ms": 91.70300199912162
+  },
+  {
+    "experiment": "corruption",
+    "attention_type": "transformed_conv",
+    "n_samples": 64,
+    "noise_prob": 0.2,
+    "mean_final_loss": 0.5966638445854187,
+    "mean_best_acc": 0.803125,
+    "mean_elapsed_ms": 237.87458820042957
+  },
+  {
+    "experiment": "corruption",
+    "attention_type": "standard",
+    "n_samples": 64,
+    "noise_prob": 0.3,
+    "mean_final_loss": 0.61106436252594,
+    "mean_best_acc": 0.73125,
+    "mean_elapsed_ms": 84.40173199996934
+  },
+  {
+    "experiment": "corruption",
+    "attention_type": "transformed_conv",
+    "n_samples": 64,
+    "noise_prob": 0.3,
+    "mean_final_loss": 0.6052531003952026,
+    "mean_best_acc": 0.790625,
+    "mean_elapsed_ms": 214.36903699977847
+  }
+]

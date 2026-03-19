@@ -1,0 +1,18 @@
+[
+  {
+    "attention_type": "standard",
+    "mean_final_loss": 0.6253782033920288,
+    "std_final_loss": 0.04116449642182864,
+    "mean_best_acc": 0.684375,
+    "std_best_acc": 0.0960143218483576,
+    "mean_elapsed_ms": 62.5581536000027
+  },
+  {
+    "attention_type": "transformed_conv",
+    "mean_final_loss": 0.5903465986251831,
+    "std_final_loss": 0.024348402011735888,
+    "mean_best_acc": 0.796875,
+    "std_best_acc": 0.04941058844013093,
+    "mean_elapsed_ms": 131.08260159998508
+  }
+]

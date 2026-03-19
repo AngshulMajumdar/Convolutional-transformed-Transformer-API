@@ -1,0 +1,12 @@
+{
+  "standard_decoder_only|n=64|c=0.0": {
+    "final_loss": 16.890264892578124,
+    "best_token_accuracy": 0.03416666723787785,
+    "elapsed_ms": 113.1998630004091
+  },
+  "transformed_conv_decoder_only|n=64|c=0.0": {
+    "final_loss": 13.839966011047363,
+    "best_token_accuracy": 0.03687499985098839,
+    "elapsed_ms": 276.6322477997164
+  }
+}

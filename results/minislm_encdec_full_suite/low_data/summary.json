@@ -1,0 +1,74 @@
+[
+  {
+    "model_type": "standard_seq2seq",
+    "mean_final_loss": 12.283599281311036,
+    "std_final_loss": 0.9517719784974737,
+    "mean_best_token_acc": 0.07085685804486275,
+    "std_best_token_acc": 0.024538666203956644,
+    "mean_elapsed_ms": 117.3764539998956,
+    "n_samples": 16
+  },
+  {
+    "model_type": "analysis_synthesis_conv",
+    "mean_final_loss": 9.094343566894532,
+    "std_final_loss": 0.6159814242613083,
+    "mean_best_token_acc": 0.1050964578986168,
+    "std_best_token_acc": 0.016411679275977024,
+    "mean_elapsed_ms": 327.2677950000798,
+    "n_samples": 16
+  },
+  {
+    "model_type": "standard_seq2seq",
+    "mean_final_loss": 12.35756320953369,
+    "std_final_loss": 0.8721777247698099,
+    "mean_best_token_acc": 0.06966495849192142,
+    "std_best_token_acc": 0.025227179058643908,
+    "mean_elapsed_ms": 139.56003839994082,
+    "n_samples": 32
+  },
+  {
+    "model_type": "analysis_synthesis_conv",
+    "mean_final_loss": 9.367939567565918,
+    "std_final_loss": 0.42981287542161273,
+    "mean_best_token_acc": 0.101682648062706,
+    "std_best_token_acc": 0.019753005389799346,
+    "mean_elapsed_ms": 370.5653879998863,
+    "n_samples": 32
+  },
+  {
+    "model_type": "standard_seq2seq",
+    "mean_final_loss": 12.76634178161621,
+    "std_final_loss": 0.8970081889481867,
+    "mean_best_token_acc": 0.060612479224801064,
+    "std_best_token_acc": 0.02369520604813333,
+    "mean_elapsed_ms": 180.2780474001338,
+    "n_samples": 64
+  },
+  {
+    "model_type": "analysis_synthesis_conv",
+    "mean_final_loss": 9.570751571655274,
+    "std_final_loss": 0.5702829755959151,
+    "mean_best_token_acc": 0.10312867611646652,
+    "std_best_token_acc": 0.025098357421979432,
+    "mean_elapsed_ms": 488.45083199994406,
+    "n_samples": 64
+  },
+  {
+    "model_type": "standard_seq2seq",
+    "mean_final_loss": 12.913664817810059,
+    "std_final_loss": 0.9910980431361947,
+    "mean_best_token_acc": 0.06460897251963615,
+    "std_best_token_acc": 0.025096912823205073,
+    "mean_elapsed_ms": 277.08025139945676,
+    "n_samples": 128
+  },
+  {
+    "model_type": "analysis_synthesis_conv",
+    "mean_final_loss": 9.584557151794433,
+    "std_final_loss": 0.5316864639767104,
+    "mean_best_token_acc": 0.10453061163425445,
+    "std_best_token_acc": 0.02154108182179047,
+    "mean_elapsed_ms": 772.9177549997985,
+    "n_samples": 128
+  }
+]

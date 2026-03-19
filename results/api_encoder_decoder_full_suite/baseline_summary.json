@@ -1,0 +1,12 @@
+{
+  "standard_seq2seq|n=64|c=0.0": {
+    "final_loss": 10.79788818359375,
+    "best_token_accuracy": 0.026874999701976775,
+    "elapsed_ms": 158.63592860041535
+  },
+  "analysis_synthesis_conv|n=64|c=0.0": {
+    "final_loss": 8.221718883514404,
+    "best_token_accuracy": 0.02874999977648258,
+    "elapsed_ms": 424.57123579988547
+  }
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "experiment": "baseline",
+    "variant": "analysis_synthesis_conv",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 8.221718883514404,
+    "mean_best_token_accuracy": 0.02874999977648258,
+    "mean_elapsed_ms": 424.57123579988547
+  },
+  {
+    "experiment": "baseline",
+    "variant": "standard_seq2seq",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 10.79788818359375,
+    "mean_best_token_accuracy": 0.026874999701976775,
+    "mean_elapsed_ms": 158.63592860041535
+  },
+  {
+    "experiment": "corruption",
+    "variant": "analysis_synthesis_conv",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 8.221718883514404,
+    "mean_best_token_accuracy": 0.02874999977648258,
+    "mean_elapsed_ms": 381.0849273999338
+  },
+  {
+    "experiment": "corruption",
+    "variant": "analysis_synthesis_conv",
+    "n_samples": 64,
+    "corruption": 0.1,
+    "mean_final_loss": 8.280712890625,
+    "mean_best_token_accuracy": 0.027499999850988388,
+    "mean_elapsed_ms": 395.1090854003269
+  },
+  {
+    "experiment": "corruption",
+    "variant": "analysis_synthesis_conv",
+    "n_samples": 64,
+    "corruption": 0.2,
+    "mean_final_loss": 8.3058012008667,
+    "mean_best_token_accuracy": 0.0265625,
+    "mean_elapsed_ms": 361.70788619929226
+  },
+  {
+    "experiment": "corruption",
+    "variant": "analysis_synthesis_conv",
+    "n_samples": 64,
+    "corruption": 0.3,
+    "mean_final_loss": 8.28513307571411,
+    "mean_best_token_accuracy": 0.025937499850988387,
+    "mean_elapsed_ms": 366.1263511992729
+  },
+  {
+    "experiment": "corruption",
+    "variant": "standard_seq2seq",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 10.79788818359375,
+    "mean_best_token_accuracy": 0.026874999701976775,
+    "mean_elapsed_ms": 133.7459967999166
+  },
+  {
+    "experiment": "corruption",
+    "variant": "standard_seq2seq",
+    "n_samples": 64,
+    "corruption": 0.1,
+    "mean_final_loss": 10.827965545654298,
+    "mean_best_token_accuracy": 0.03062499947845936,
+    "mean_elapsed_ms": 139.31433220059262
+  },
+  {
+    "experiment": "corruption",
+    "variant": "standard_seq2seq",
+    "n_samples": 64,
+    "corruption": 0.2,
+    "mean_final_loss": 10.804005813598632,
+    "mean_best_token_accuracy": 0.02968749962747097,
+    "mean_elapsed_ms": 141.80959279947274
+  },
+  {
+    "experiment": "corruption",
+    "variant": "standard_seq2seq",
+    "n_samples": 64,
+    "corruption": 0.3,
+    "mean_final_loss": 10.679253387451173,
+    "mean_best_token_accuracy": 0.027500000223517417,
+    "mean_elapsed_ms": 140.7132594002178
+  },
+  {
+    "experiment": "low_data",
+    "variant": "analysis_synthesis_conv",
+    "n_samples": 16,
+    "corruption": 0.0,
+    "mean_final_loss": 8.065897178649902,
+    "mean_best_token_accuracy": 0.04000000059604645,
+    "mean_elapsed_ms": 281.60376280029595
+  },
+  {
+    "experiment": "low_data",
+    "variant": "analysis_synthesis_conv",
+    "n_samples": 32,
+    "corruption": 0.0,
+    "mean_final_loss": 8.175102233886719,
+    "mean_best_token_accuracy": 0.03624999970197677,
+    "mean_elapsed_ms": 308.64971299961326
+  },
+  {
+    "experiment": "low_data",
+    "variant": "analysis_synthesis_conv",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 8.221718883514404,
+    "mean_best_token_accuracy": 0.02874999977648258,
+    "mean_elapsed_ms": 395.3446196006553
+  },
+  {
+    "experiment": "low_data",
+    "variant": "analysis_synthesis_conv",
+    "n_samples": 128,
+    "corruption": 0.0,
+    "mean_final_loss": 8.323511695861816,
+    "mean_best_token_accuracy": 0.026249999925494195,
+    "mean_elapsed_ms": 578.6421283999516
+  },
+  {
+    "experiment": "low_data",
+    "variant": "standard_seq2seq",
+    "n_samples": 16,
+    "corruption": 0.0,
+    "mean_final_loss": 10.426667404174804,
+    "mean_best_token_accuracy": 0.03500000014901161,
+    "mean_elapsed_ms": 103.01259760053654
+  },
+  {
+    "experiment": "low_data",
+    "variant": "standard_seq2seq",
+    "n_samples": 32,
+    "corruption": 0.0,
+    "mean_final_loss": 10.735770988464356,
+    "mean_best_token_accuracy": 0.033750000223517415,
+    "mean_elapsed_ms": 122.60111499999766
+  },
+  {
+    "experiment": "low_data",
+    "variant": "standard_seq2seq",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 10.79788818359375,
+    "mean_best_token_accuracy": 0.026874999701976775,
+    "mean_elapsed_ms": 146.3491102000262
+  },
+  {
+    "experiment": "low_data",
+    "variant": "standard_seq2seq",
+    "n_samples": 128,
+    "corruption": 0.0,
+    "mean_final_loss": 10.950820159912109,
+    "mean_best_token_accuracy": 0.024531250074505805,
+    "mean_elapsed_ms": 216.26268719992368
+  }
+]

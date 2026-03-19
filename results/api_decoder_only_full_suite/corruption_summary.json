@@ -1,0 +1,42 @@
+{
+  "standard_decoder_only|n=64|c=0.0": {
+    "final_loss": 16.890264892578124,
+    "best_token_accuracy": 0.03416666723787785,
+    "elapsed_ms": 104.56286940025166
+  },
+  "transformed_conv_decoder_only|n=64|c=0.0": {
+    "final_loss": 13.839966011047363,
+    "best_token_accuracy": 0.03687499985098839,
+    "elapsed_ms": 232.7596312003152
+  },
+  "standard_decoder_only|n=64|c=0.1": {
+    "final_loss": 16.926897048950195,
+    "best_token_accuracy": 0.036666666716337205,
+    "elapsed_ms": 100.96427540011064
+  },
+  "transformed_conv_decoder_only|n=64|c=0.1": {
+    "final_loss": 13.77567195892334,
+    "best_token_accuracy": 0.03770833313465118,
+    "elapsed_ms": 226.66836620010145
+  },
+  "standard_decoder_only|n=64|c=0.2": {
+    "final_loss": 16.897211265563964,
+    "best_token_accuracy": 0.035624999180436136,
+    "elapsed_ms": 95.66361180077365
+  },
+  "transformed_conv_decoder_only|n=64|c=0.2": {
+    "final_loss": 13.748566627502441,
+    "best_token_accuracy": 0.03812499940395355,
+    "elapsed_ms": 226.25846900045872
+  },
+  "standard_decoder_only|n=64|c=0.3": {
+    "final_loss": 16.94856357574463,
+    "best_token_accuracy": 0.034166667610406876,
+    "elapsed_ms": 96.88998859965068
+  },
+  "transformed_conv_decoder_only|n=64|c=0.3": {
+    "final_loss": 13.775200462341308,
+    "best_token_accuracy": 0.03708333410322666,
+    "elapsed_ms": 239.14882560020487
+  }
+}

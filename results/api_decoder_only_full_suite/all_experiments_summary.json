@@ -1,0 +1,164 @@
+[
+  {
+    "experiment": "baseline",
+    "variant": "standard_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 16.890264892578124,
+    "mean_best_token_accuracy": 0.03416666723787785,
+    "mean_elapsed_ms": 113.1998630004091
+  },
+  {
+    "experiment": "baseline",
+    "variant": "transformed_conv_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 13.839966011047363,
+    "mean_best_token_accuracy": 0.03687499985098839,
+    "mean_elapsed_ms": 276.6322477997164
+  },
+  {
+    "experiment": "low_data",
+    "variant": "standard_decoder_only",
+    "n_samples": 16,
+    "corruption": 0.0,
+    "mean_final_loss": 16.463101196289063,
+    "mean_best_token_accuracy": 0.042500000819563864,
+    "mean_elapsed_ms": 53.719971800092026
+  },
+  {
+    "experiment": "low_data",
+    "variant": "standard_decoder_only",
+    "n_samples": 32,
+    "corruption": 0.0,
+    "mean_final_loss": 16.764360237121583,
+    "mean_best_token_accuracy": 0.038333334028720856,
+    "mean_elapsed_ms": 66.0979310003313
+  },
+  {
+    "experiment": "low_data",
+    "variant": "standard_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 16.890264892578124,
+    "mean_best_token_accuracy": 0.03416666723787785,
+    "mean_elapsed_ms": 93.23908719961764
+  },
+  {
+    "experiment": "low_data",
+    "variant": "standard_decoder_only",
+    "n_samples": 128,
+    "corruption": 0.0,
+    "mean_final_loss": 16.97116641998291,
+    "mean_best_token_accuracy": 0.0324999999254942,
+    "mean_elapsed_ms": 178.8176474005013
+  },
+  {
+    "experiment": "low_data",
+    "variant": "transformed_conv_decoder_only",
+    "n_samples": 16,
+    "corruption": 0.0,
+    "mean_final_loss": 13.678186225891114,
+    "mean_best_token_accuracy": 0.049166667461395266,
+    "mean_elapsed_ms": 113.61183340050047
+  },
+  {
+    "experiment": "low_data",
+    "variant": "transformed_conv_decoder_only",
+    "n_samples": 32,
+    "corruption": 0.0,
+    "mean_final_loss": 13.634819793701173,
+    "mean_best_token_accuracy": 0.03208333365619183,
+    "mean_elapsed_ms": 145.57960359998106
+  },
+  {
+    "experiment": "low_data",
+    "variant": "transformed_conv_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 13.839966011047363,
+    "mean_best_token_accuracy": 0.03687499985098839,
+    "mean_elapsed_ms": 224.55758199976117
+  },
+  {
+    "experiment": "low_data",
+    "variant": "transformed_conv_decoder_only",
+    "n_samples": 128,
+    "corruption": 0.0,
+    "mean_final_loss": 13.819681549072266,
+    "mean_best_token_accuracy": 0.034583333507180215,
+    "mean_elapsed_ms": 425.8605068000179
+  },
+  {
+    "experiment": "corruption",
+    "variant": "standard_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 16.890264892578124,
+    "mean_best_token_accuracy": 0.03416666723787785,
+    "mean_elapsed_ms": 104.56286940025166
+  },
+  {
+    "experiment": "corruption",
+    "variant": "standard_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.1,
+    "mean_final_loss": 16.926897048950195,
+    "mean_best_token_accuracy": 0.036666666716337205,
+    "mean_elapsed_ms": 100.96427540011064
+  },
+  {
+    "experiment": "corruption",
+    "variant": "standard_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.2,
+    "mean_final_loss": 16.897211265563964,
+    "mean_best_token_accuracy": 0.035624999180436136,
+    "mean_elapsed_ms": 95.66361180077365
+  },
+  {
+    "experiment": "corruption",
+    "variant": "standard_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.3,
+    "mean_final_loss": 16.94856357574463,
+    "mean_best_token_accuracy": 0.034166667610406876,
+    "mean_elapsed_ms": 96.88998859965068
+  },
+  {
+    "experiment": "corruption",
+    "variant": "transformed_conv_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.0,
+    "mean_final_loss": 13.839966011047363,
+    "mean_best_token_accuracy": 0.03687499985098839,
+    "mean_elapsed_ms": 232.7596312003152
+  },
+  {
+    "experiment": "corruption",
+    "variant": "transformed_conv_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.1,
+    "mean_final_loss": 13.77567195892334,
+    "mean_best_token_accuracy": 0.03770833313465118,
+    "mean_elapsed_ms": 226.66836620010145
+  },
+  {
+    "experiment": "corruption",
+    "variant": "transformed_conv_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.2,
+    "mean_final_loss": 13.748566627502441,
+    "mean_best_token_accuracy": 0.03812499940395355,
+    "mean_elapsed_ms": 226.25846900045872
+  },
+  {
+    "experiment": "corruption",
+    "variant": "transformed_conv_decoder_only",
+    "n_samples": 64,
+    "corruption": 0.3,
+    "mean_final_loss": 13.775200462341308,
+    "mean_best_token_accuracy": 0.03708333410322666,
+    "mean_elapsed_ms": 239.14882560020487
+  }
+]
