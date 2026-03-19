@@ -1,0 +1,10 @@
+[
+  "tests/test_decoder_only_api.py::test_decoder_only_api_builds_and_runs_baseline",
+  "tests/test_encoder_decoder_api.py::test_encoder_decoder_api_baseline_runs",
+  "tests/test_encoder_decoder_api.py::test_encoder_decoder_api_builders",
+  "tests/test_seq2seq.py::test_analysis_synthesis_transformer_one_step",
+  "tests/test_seq2seq.py::test_seq2seq_forward_variants",
+  "tests/test_smoke.py::test_imports_and_attention_builders",
+  "tests/test_smoke.py::test_model_instantiation_and_forward",
+  "tests/test_smoke.py::test_tiny_training_step"
+]
