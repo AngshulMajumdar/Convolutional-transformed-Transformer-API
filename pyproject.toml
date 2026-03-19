@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transformed-transformer"
+version = "0.3.0"
+description = "A clean PyTorch API for standard and transformed transformer attention variants."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Angshul Majumdar"}
+]
+dependencies = [
+  "torch>=2.1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[project.scripts]
+transformed-transformer = "transformed_transformer.cli:main"
